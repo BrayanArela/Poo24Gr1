@@ -228,6 +228,12 @@ public class MainCliente extends javax.swing.JPanel {
 
         jLabel3.setText("Nombre:");
 
+        txtNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombreActionPerformed(evt);
+            }
+        });
+
         jLabel4.setText("T.Doc:");
 
         cbxTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
@@ -413,7 +419,7 @@ public class MainCliente extends javax.swing.JPanel {
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         // TODO add your handling code here:
-        paintForm();
+        
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void txtBuscarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyTyped
@@ -433,6 +439,10 @@ public class MainCliente extends javax.swing.JPanel {
         trsfiltro = new TableRowSorter<>(jTable1.getModel());
         jTable1.setRowSorter(trsfiltro);
     }//GEN-LAST:event_txtBuscarKeyTyped
+
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombreActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
